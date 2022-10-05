@@ -18,25 +18,37 @@ package javademo1005_basic;
  */
 
 public class Java003_dataType {
-public static void main(String[] args) {
-	
-	//	ⓐ 변수 선언
-	int data;  //데이터타입 변수명;
-	//	ⓑ 값을 할당
-	data = 3;  //data변수에 3값을 할당(저장)
+	public static void main(String[] args) {
 
-	//int data = 3;
-	
-	System.out.println(data); //3
+		// ⓐ 변수 선언
+		int data; // 데이터타입 변수명;
+		// ⓑ 값을 할당
+		data = 3; // data변수에 3값을 할당(저장)
 
-	data = 10;
-	System.out.println(data); //10
-	
-	//double avg = 4;
-	//Type mismatch: cannot convert from double to int
-	//int num = 4.0;
-	
-	//	Type mismatch: cannot convert from float to long
-	//long ko = 4.0F;
-}
+		// int data = 3;
+
+		System.out.println(data); // 3
+
+		data = 10;
+		System.out.println(data); // 10
+
+		double avg = 4;
+		// Type mismatch: cannot convert from double to int
+		// int num = 4.0;
+
+		// Type mismatch: cannot convert from float to long
+		// long ko = 4.0F;
+
+		int x = 0101; // 8진수
+		System.out.println(x); // 65
+
+		int y = 65; // 10진수
+		System.out.println(y); // 65
+
+		int z = 0B101; // 2진수 (대문자,소문자 구별X)
+		System.out.println(z); //5
+
+		int k = 0x101; //16진수 (대문자,소문자 구별X)
+		System.out.println(k); //257
+	}
 }
